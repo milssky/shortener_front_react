@@ -51,7 +51,7 @@ class UrlForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <input type="url" name="full_url" maxLength="200" class="form-control py-2 mb-2" required id="id_full_url"></input>
                         <div class="form-text pb-3">Вставь ссылку</div>
-                        <input type="text" name="slug" maxLength="200" class="form-control py-2 mb-2" required id="id_slug"></input>
+                        <input type="text" name="slug" maxLength="200" class="form-control py-2 mb-2" id="id_slug"></input>
                         <div class="form-text pb-3">Вставь короткую ссылку</div>
                         <button type="submit" class="btn btn-primary">Сократить</button>
                     </form>
