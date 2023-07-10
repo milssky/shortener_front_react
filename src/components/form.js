@@ -18,7 +18,7 @@ class UrlForm extends React.Component {
 
         var raw = JSON.stringify({
             "full_url": event.target.full_url.value,
-            "slug": event.target.slug.value,
+            "short_url": event.target.slug.value,
             "secret": "hey"
         });
 
@@ -56,7 +56,7 @@ class UrlForm extends React.Component {
                         <button type="submit" class="btn btn-primary">Сократить</button>
                     </form>
                 </div>
-                <Url url={"http://localhost:8000/go/" + this.state.data.slug} visible={this.state.visible} />
+                <Url url={"http://localhost:8000/go/" + this.state.data.short_url} visible={this.state.visible} />
             </div>
         )
     }
